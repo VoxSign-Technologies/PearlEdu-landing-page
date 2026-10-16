@@ -182,12 +182,12 @@
     #pe-loader-wrap{transition:none}
   }
 
-  /* EMIS two-column hero + concave wave */
+  /* PearlEdu hero — photo background with legibility overlays */
   .pe-hero{
     position:relative;min-height:100vh;min-height:100dvh;
     background:
-      linear-gradient(115deg,rgba(5,63,92,.88) 0%,rgba(10,106,143,.78) 48%,rgba(66,158,189,.72) 100%),
-      radial-gradient(ellipse at 70% 40%,rgba(159,231,245,.25),transparent 55%),
+      linear-gradient(112deg,rgba(4,42,61,.92) 0%,rgba(5,63,92,.78) 38%,rgba(5,63,92,.42) 68%,rgba(5,63,92,.30) 100%),
+      url('images/hero-school-children.jpg') center 30%/cover no-repeat,
       var(--ink);
     color:#fff;display:flex;flex-direction:column;justify-content:center;
     padding:110px 0 88px;overflow:hidden;
@@ -201,9 +201,11 @@
     .pe-hero .pe-cta-row{justify-content:center}
     .pe-hero-visual{order:-1;max-width:360px;margin:0 auto}
   }
-  .pe-hero h1{font-size:clamp(28px,4.2vw,42px);font-weight:700;margin:0 0 16px;color:#fff;max-width:18ch}
+  .pe-hero h1{font-size:clamp(28px,4.2vw,42px);font-weight:700;margin:0 0 16px;color:#fff;max-width:18ch;
+    text-shadow:0 2px 18px rgba(3,32,46,.65),0 1px 3px rgba(3,32,46,.8)}
   @media(max-width:900px){.pe-hero h1{max-width:none;margin-left:auto;margin-right:auto}}
-  .pe-hero p.pe-hero-lead{margin:0 0 26px;font-size:clamp(15px,1.9vw,17.5px);color:rgba(255,255,255,.9);max-width:520px;line-height:1.65}
+  .pe-hero p.pe-hero-lead{margin:0 0 26px;font-size:clamp(15px,1.9vw,17.5px);color:rgba(255,255,255,.94);max-width:520px;line-height:1.65;
+    text-shadow:0 1px 12px rgba(3,32,46,.6),0 1px 2px rgba(3,32,46,.7)}
   @media(max-width:900px){.pe-hero p.pe-hero-lead{margin-left:auto;margin-right:auto}}
   .pe-hero-note{margin:18px 0 0;font-size:13.5px;color:rgba(255,255,255,.78)}
   .pe-hero-note a{color:#fff;text-decoration:underline;text-underline-offset:3px}
@@ -214,7 +216,7 @@
   @media(prefers-reduced-motion:reduce){
     .pe-hero-copy,.pe-hero-visual{opacity:1;transform:none;animation:none}
   }
-  .pe-hero-art{width:100%;max-width:480px;margin-left:auto;display:block;filter:drop-shadow(0 28px 40px rgba(5,63,92,.35))}
+  .pe-hero-art{width:100%;max-width:480px;margin-left:auto;display:block;filter:drop-shadow(0 28px 40px rgba(3,32,46,.55))}
   @media(max-width:900px){.pe-hero-art{margin:0 auto}}
   .pe-hero-wave{
     position:absolute;left:0;right:0;bottom:-1px;width:100%;height:56px;z-index:3;display:block;
